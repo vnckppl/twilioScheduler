@@ -14,7 +14,7 @@ The script takes in four positional arguments:
 ## Spreadsheet format
 An example spreadsheet is avaulable under see *./example_sheet/example_input.xlsx*. 
 
-![alt text](./example_sheet/example_input.png =250x "Example Spreadsheet")
+<img src="./example_sheet/example_input.png" alt="Example Spreadsheet" width="250"/>
 
 The first four lines of the spreadsheet are reserved for a message ID (ID), the sender number (from), the receiver number (to), and headers for the remaining data lines. For these first four lines, you only need to edit information in column B, row 1-3.
 
