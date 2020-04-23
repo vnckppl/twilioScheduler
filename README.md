@@ -22,7 +22,7 @@ Line 5 and 6 in the example are data lines. Column A shows the date and time sta
 
 
 ## Notes
-Messages to be send are written out to specified output folder. After these messages are sent, the will *not* be removed. After a message is sent, the crontab entry for this message *will* be removed.
+Messages to be send are written out to the user specified output folder. After these messages are sent, they will *not* be removed. Immediately after a message has been sent, the crontab entry for this message *will* be removed.
 
 
 ## Known Bugs
