@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
 
-# 2020-04-22
 # Vincent Koppelmans
 
 
@@ -57,7 +56,7 @@ class scheduleMessages:
         self.tel_from = self.info[1].iloc[1]
         self.tel_to = self.info[1].iloc[2]
 
-        # Read data (date&time + message) from excel sheet
+        # ** Read data (date&time + message) from excel sheet
         self.data = pd.read_excel(self.excelFile, header=None, skiprows=4)
         self.data.columns = ['DateTime', 'Message']
 
@@ -68,7 +67,7 @@ class scheduleMessages:
         self.oDirSub = os.path.join(self.oDir, self.subject)
         os.makedirs(self.oDirSub, exist_ok=True)
 
-        # *** Dictionary for storing messages
+        # ** Dictionary for storing messages
         self.twilioMessages = {}
 
         # ** Loop over each line in the excel file:
@@ -81,7 +80,7 @@ class scheduleMessages:
             # *** Convert date and time for message building
             DateTimeM = str(DateTime).replace("-", "").replace(":", "").replace(" ", "_")
 
-            # ** Output filename
+            # *** Output filename
             # Expecting a date_time in the format of: YYYYMMDD_HHMMSS
             oFile = self.subject + "_" + DateTimeM + ".py"
             self.oFile = os.path.join(self.oDirSub, oFile)
@@ -104,7 +103,7 @@ class scheduleMessages:
             # *** Add message job to CronTab
             # Create a cron job and remove the cron job
             # immediately after it ran. Note that upon testing
-            # this worked on Debian, but not OSX Mojave.
+            # removing the job worked on Debian, but not OSX Mojave.
             cron = CronTab(user=True)
             job = cron.new(
                 comment=f'''{self.subject}''',
