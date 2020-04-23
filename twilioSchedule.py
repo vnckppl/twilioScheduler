@@ -3,7 +3,7 @@
 # Vincent Koppelmans
 
 
-# * Environment
+# * Modules
 import argparse              # Arguments
 import os                    # Join file paths
 import pandas as pd          # Read excel files
