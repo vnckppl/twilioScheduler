@@ -12,7 +12,7 @@ The script takes in four positional arguments:
   
 
 ## Spreadsheet format
-An example spreadsheet is avaulable under see *./example_sheet/example_input.xlsx*. 
+An example spreadsheet is available under see *./example_sheet/example_input.xlsx*. 
 
 <img src="./example_sheet/example_input.png" alt="Example Spreadsheet" width="350"/>
 
