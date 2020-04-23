@@ -41,7 +41,7 @@ class scheduleMessages:
         # ** Store input arguments in object
         self.excelFile = args.excelFile
         self.oDir = args.oDir
-        self.twilioCred = {args.acound_sid: args.auth_token}
+        self.twilioCred = {args.account_sid: args.auth_token}
 
         # ** Create output folder
         os.makedirs(self.oDir, exist_ok=True)
