@@ -14,9 +14,9 @@ from crontab import CronTab  # Crontab to plan messages
 # * Background
 background = "This script is created to autmatically set up delivery of" \
     "reminder SMS messages to subjects participating in the EMA portion of" \
-    "the UofU EmoReg study. This script takes an Excel sheet with a" \
-    "subject's phone number, and dates+times+messages for when this person" \
-    "should receive these messages."
+    "the UofU N(ew)EmoReg and COVID-EMA studies. This script takes an Excel" \
+    "sheet with a subject's phone number, and dates+times+messages for when" \
+    "this person should receive these messages."
 
 
 # * Arguments
